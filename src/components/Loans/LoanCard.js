@@ -88,8 +88,7 @@ const BtnText = styled.p`
 `;
 
 const LoanCard = React.memo(function LoanCard(props) {
-  console.log("RENDERED");
-  // TODO - test speed -> This solution vs Using Redux state
+  // TODO - test speed of JSON lightbox opening -> This solution (trigger-re-render of LoanCard) vs Using Redux state
 
   // Lightbox state
   const [visible, setVisible] = useState(false);
