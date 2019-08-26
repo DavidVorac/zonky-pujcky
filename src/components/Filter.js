@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { changeApiData } from "../actions";
 
 const Wrap = styled.div`
+  flex-basis: 100%;
+  max-width: 145px;
   margin: 10px;
 `;
 
