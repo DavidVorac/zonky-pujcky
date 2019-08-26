@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Timer from "./Timer";
+import Spinner from "./Spinner";
 
 const Wrap = styled.div`
   position: relative;
@@ -22,6 +23,8 @@ const OverviewContent = styled.div`
   color: white;
   text-align: center;
   z-index: 10;
+  font-size: 14px;
+  font-family: "Roboto";
 `;
 
 const Heading = styled.h1`
@@ -31,6 +34,11 @@ const Heading = styled.h1`
   letter-spacing: 5px;
   padding-top: 25px;
   padding-bottom: 10px;
+`;
+
+const Description = styled.p`
+  margin-top: 10px;
+  font-weight: bold;
 `;
 
 const Overview = () => {
@@ -44,7 +52,9 @@ const Overview = () => {
 
       <OverviewContent>
         <Heading>PŮJČKY</Heading>
+        <Description>aktualizace dat:</Description>
         <Timer />
+        <Spinner />
       </OverviewContent>
     </Wrap>
   );

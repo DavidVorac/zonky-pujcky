@@ -1,38 +1,6 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { changeApiData } from "../actions";
-
-import spinner from "../assets/icons/spinner.svg";
-
-const Updater = styled.div`
-  margin-top: 10px;
-  font-size: 14px;
-  font-family: "Roboto";
-`;
-
-const Description = styled.p`
-  font-weight: bold;
-`;
-
-const SpinnerWrap = styled.div`
-  animation-name: fade-in;
-  animation-duration: 1s;
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  img {
-    width: 40px;
-    height: auto;
-  }
-`;
 
 const Timer = () => {
   const initialCountTime = 300;
@@ -81,19 +49,9 @@ const Timer = () => {
 
   return (
     <span>
-      <Updater>
-        <Description>aktualizace dat:</Description>
-        <p>
-          {minutes}:{seconds}
-        </p>
-      </Updater>
-      {apiData.doFetch === true ? (
-        <SpinnerWrap>
-          <img src={spinner} alt="Spinner icon" />
-        </SpinnerWrap>
-      ) : (
-        <br />
-      )}
+      <p>
+        {minutes}:{seconds}
+      </p>
     </span>
   );
 };
