@@ -8,12 +8,14 @@
 Via yarn:
 
 ```
+yarn install
 yarn start
 ```
 
 Or via npm:
 
 ```
+npm install
 npm start
 ```
 
