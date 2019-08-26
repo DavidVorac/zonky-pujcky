@@ -9,7 +9,7 @@ const DataWrapStyles = styled.div`
   min-width: 100%;
   max-width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 43, 54, 0.85);
+  background-color: rgba(0, 0, 0, 0.93);
   text-align: left;
   z-index: 99;
   overflow: auto;
@@ -27,7 +27,9 @@ const Spacing = styled.div`
     width: 100%;
     max-width: 800px;
     margin: 0 !important;
+    margin-bottom: 20px !important;
     padding: 30px !important;
+    border-radius: 10px;
   }
 `;
 
