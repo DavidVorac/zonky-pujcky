@@ -9,10 +9,20 @@ import Error from "./Error";
 
 const Content = styled.div`
   display: flex;
-  flex-wrap: wrap;
   max-width: 1200px;
-  justify-content: space-evenly;
   margin: 10px auto 0;
+`;
+
+const LoansWrap = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+`;
+
+const FakeCard = styled.div`
+  min-width: 300px;
+  margin: 25px 25px 50px;
 `;
 
 const Loans = () => {
@@ -65,16 +75,19 @@ const Loans = () => {
       ) : apiData.isError === true ? (
         <Error />
       ) : (
-        apiData.data.map(({ id, name, story, photos }, i) => (
-          <LoanCard
-            /* TODO - maybe pass only apiData.data[i] and re-distribute data inside component (can be faster) */
-            key={id}
-            data={apiData.data[i]}
-            name={name}
-            story={story}
-            imgUrl={photos[0].url}
-          />
-        ))
+        <LoansWrap>
+          {apiData.data.map(({ id, name, story, photos }, i) => (
+            <LoanCard
+              /* TODO - maybe pass only apiData.data[i] and re-distribute data inside component (can be faster) */
+              key={id}
+              data={apiData.data[i]}
+              name={name}
+              story={story}
+              imgUrl={photos[0].url}
+            />
+          ))}
+          <FakeCard />
+        </LoansWrap>
       )}
     </Content>
   );
