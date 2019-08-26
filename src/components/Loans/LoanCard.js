@@ -87,7 +87,8 @@ const BtnText = styled.p`
   color: white;
 `;
 
-const LoanCard = props => {
+const LoanCard = React.memo(function LoanCard(props) {
+  console.log("RENDERED");
   // TODO - test speed -> This solution vs Using Redux state
 
   // Lightbox state
@@ -148,6 +149,6 @@ const LoanCard = props => {
       </Content>
     </Wrapper>
   );
-};
+});
 
 export default LoanCard;
