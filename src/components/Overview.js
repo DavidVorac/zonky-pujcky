@@ -8,6 +8,7 @@ const Wrap = styled.div`
   position: relative;
   height: 180px;
   margin-bottom: 40px;
+  overflow: hidden;
 `;
 
 const SvgWrap = styled.div`

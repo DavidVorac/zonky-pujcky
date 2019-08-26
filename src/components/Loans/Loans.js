@@ -9,6 +9,7 @@ import Error from "./Error";
 
 const Content = styled.div`
   display: flex;
+  width: 100%;
   max-width: 1200px;
   margin: 10px auto 0;
 `;
