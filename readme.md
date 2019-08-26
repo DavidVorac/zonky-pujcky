@@ -1,6 +1,6 @@
-<p align="center">**[DEMO](http://zonky.davidvorac.cz/)**</p>
-<p align="center"><img width="240" alt="zebra icon" src="http://zonky.davidvorac.cz/custom/zebra-github.png"></p>
+<p align="center" style="font-weight: bold;font-size:22px;"><a href="http://zonky.davidvorac.cz/" target="_BLANK">DEMO</a></p>
 <p align="center">React application displaying loans from Zonky API. </p>
+<p align="center"><img width="240" alt="zebra icon" src="http://zonky.davidvorac.cz/custom/zebra-github.png"></p>
 
 **Want to try out locally?**
 <br />
