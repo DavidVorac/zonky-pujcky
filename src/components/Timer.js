@@ -34,7 +34,7 @@ const SpinnerWrap = styled.div`
   }
 `;
 
-function Timer() {
+const Timer = () => {
   const initialCountTime = 300;
 
   // Can call Redux Actions using dispatch()
@@ -96,6 +96,6 @@ function Timer() {
       )}
     </span>
   );
-}
+};
 
 export default Timer;

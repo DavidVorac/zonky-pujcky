@@ -10,7 +10,7 @@ const FilterWrap = styled.div`
   margin-bottom: 10px;
 `;
 
-function Filters() {
+const Filters = () => {
   return (
     <FilterWrap>
       <Filter filterType={"termInMonths"} text={"Délka splátky"} />
@@ -19,6 +19,6 @@ function Filters() {
       <Filter filterType={"deadline"} text={"Konec splátky"} />
     </FilterWrap>
   );
-}
+};
 
 export default Filters;
