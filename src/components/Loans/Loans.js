@@ -44,9 +44,11 @@ const Loans = () => {
         dispatch(
           changeApiData({
             isLoading: false,
-            isError: false,
             doFetch: false,
-            data: apiDataInJson
+            isError: false,
+            data: apiDataInJson,
+            filter: null,
+            sortBy: null
           })
         );
       } catch (err) {
@@ -56,7 +58,9 @@ const Loans = () => {
             ...apiData,
             isLoading: false,
             doFetch: false,
-            isError: true
+            isError: true,
+            filter: null,
+            sortBy: null
           })
         );
         console.log("ERROR!!!:", err);
