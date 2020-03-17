@@ -1,7 +1,7 @@
-**<p align="center"><a href="http://zonky.davidvorac.cz/" target="_BLANK">DEMO</a></p>**
+**<p align="center"><a href="https://zonky-pujcky.now.sh" target="_BLANK">DEMO</a></p>**
 
 <p align="center">Responsive React App displaying loans from Zonky API.</p>
-<p align="center"><img width="240" alt="zebra icon" src="http://zonky.davidvorac.cz/custom/zebra-github.png"></p>
+<p align="center"><img width="240" alt="zebra icon" src="./zebra-github.png"></p>
 
 **Want to try out locally?**
 <br />
